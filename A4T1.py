@@ -5,6 +5,7 @@ import sys
 port_number = int(sys.argv[1])
 
 
+# Load the songwriters data from the JSON file
 with open('songwriters.json', encoding='utf-8') as f:
     songwriters_data = bson.json_util.loads(f.read())
 
